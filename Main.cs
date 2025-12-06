@@ -28,11 +28,6 @@ namespace Template // TODO: Rename the entire namespace
             RestManager.RegisterAll();
         }
 
-        private object Test(RestRequestArgs args)
-        {
-            throw new NotImplementedException();
-        }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)
