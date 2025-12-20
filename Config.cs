@@ -51,6 +51,7 @@ public class Settings
                 if (deserializedConfig != null)
                 {
                     Config = deserializedConfig;
+                    Save();
                     return new ResponseMessage()
                     {
                         Text = $"[{Core.PluginName}] Loaded config.",
