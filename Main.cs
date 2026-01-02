@@ -1,4 +1,5 @@
 ﻿using TerrariaApi.Server;
+using TShockAPI;
 
 namespace Template // TODO: Rename the entire namespace
 {
@@ -17,7 +18,7 @@ namespace Template // TODO: Rename the entire namespace
         public override void Initialize()
         {
             // Load config
-            // TShock.Log.ConsoleInfo(Settings.Load().Text);
+            TShock.Log.ConsoleInfo(Config.Load().Text);
 
             // Load events
             EventManager.RegisterAll(this);
