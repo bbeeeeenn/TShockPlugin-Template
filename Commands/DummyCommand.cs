@@ -1,4 +1,3 @@
-using Microsoft.Xna.Framework;
 using TShockAPI;
 
 namespace Template.Commands;
