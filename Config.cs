@@ -60,10 +60,13 @@ public class Config
                 }
                 else
                 {
+                    TShock.Log.ConsoleError(
+                        $"[{Core.PluginName}] Config file was found, but deserialization returned null."
+                    );
                     return new ResponseMessage()
                     {
                         Text =
-                            $"[{Core.PluginName}] Config file was found, but deserialization returned null.",
+                            $"[{Core.PluginName}] Error loading config. Check logs for more details.",
                         Color = Color.Red,
                     };
                 }
